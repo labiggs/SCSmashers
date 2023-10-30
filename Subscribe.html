@@ -19,11 +19,16 @@
     </header>
 
     <section>
-        <h3>SUBSCRIBE</h3>
+        <h1>SUBSCRIBE</h3>
         <p>Stay up to date on all things "Smashers". Enter your email below to join our newsletter.</p>
-        <ul>
-            <li>Email:</li>
-        </ul>
+        <h3>Enter your email address</h1>
+        <form action="process_form.php" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    
     </section>
     </body>
     </html>
