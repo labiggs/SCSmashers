@@ -8,7 +8,7 @@
 
 <body>
     <header>
-       <h1>SOUTH CAROLINA SMASHERS</h1>
+       <h1><img src="https://static.wixstatic.com/media/1b13db_e2c29d4cf8e845729c75c97ecd2f9332~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg" alt="logo" width="150" height="150">SOUTH CAROLINA SMASHERS</h1>
             <h2>The Major League Team of South Carolina</h2>
       
         <button onclick="window.location.href = 'index.html';">HOME</button>
@@ -18,18 +18,28 @@
        
     </header>
 
-    <section>
-        <h1>SUBSCRIBE</h3>
-        <p>Stay up to date on all things "Smashers". Enter your email below to join our newsletter.</p>
-        <h3>Enter your email address</h1>
-        <form action="process_form.php" method="post">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <br>
-            <input type="submit" value="Submit">
+    <div class="container">
+        <h1>Sign Up for our Weekly Newletter</h1>
+        <form id="registration-form" action="#" method="post">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password"required>
+            </div>
+            <button type="submit">Register</button>
         </form>
-    
-    </section>
+    </div>
+    <script src="script.js"></script>
     </body>
     </html>
-
